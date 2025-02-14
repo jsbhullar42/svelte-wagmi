@@ -1,0 +1,20 @@
+{
+	"name": "svelte-wagmi",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:latest",
+	"containerEnv": {
+		"TZ": "America/Vancouver"
+	},
+	"runArgs": ["--network=host"],
+	"postCreateCommand": ".devcontainer/postCreateCommand.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"fill-labs.dependi", //Dependi
+				"cardinal90.multi-cursor-case-preserve", //Multi Cursor Case Preserve
+				"svelte.svelte-vscode", //Svelte
+				"ardenivanov.svelte-intellisense" //Svelte IntelliSense
+			]
+		}
+	},
+	"shutdownAction": "stopContainer"
+}
